@@ -36,12 +36,31 @@ public class MainActivity extends AppCompatActivity {
         setContentView(webView);
 
         WebSettings webSettings = webView.getSettings();
-        webSettings.setJavaScriptEnabled(true);     // ✅ Essential for JS-based sites
-        webSettings.setDomStorageEnabled(true);     // ✅ Needed for localStorage
-        webSettings.setCacheMode(WebSettings.LOAD_DEFAULT); // ✅ Default caching
+        webSettings.setJavaScriptEnabled(true);
+        webSettings.setDomStorageEnabled(true);
+        webSettings.setCacheMode(WebSettings.LOAD_NO_CACHE);  // 🚫 avoid cache-related issues
 
-        webView.setWebViewClient(new WebViewClient()); // ✅ Keeps navigation inside app
-        webView.loadUrl("https://ecommerce-app-7.vercel.app");
+        webView.clearCache(true);  // 🧹 clear previous cache
+        webView.clearHistory();
+
+        // 🌐 Keep navigation inside the WebView & handle errors
+        webView.setWebViewClient(new WebViewClient() {
+            @Override
+            public boolean shouldOverrideUrlLoading(WebView view, String url) {
+                return false; // Let WebView handle the URL
+            }
+
+            @Override
+            public void onReceivedError(WebView view, int errorCode, String description, String failingUrl) {
+                view.loadData(
+                    "<html><body><h2>Page failed to load</h2><p>" + description + "</p></body></html>",
+                    "text/html",
+                    "UTF-8"
+                );
+            }
+        });
+
+        webView.loadUrl("https://ecommerce-app-7.vercel.app"); // ✅ our site
     }
 
     @Override

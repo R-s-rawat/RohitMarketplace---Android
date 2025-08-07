@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Frontend mockups\RohitMarketplace\app\src\main\AndroidManifest.xml:2:1-16:12
-INJECTED from C:\Frontend mockups\RohitMarketplace\app\src\main\AndroidManifest.xml:2:1-16:12
-INJECTED from C:\Frontend mockups\RohitMarketplace\app\src\main\AndroidManifest.xml:2:1-16:12
-INJECTED from C:\Frontend mockups\RohitMarketplace\app\src\main\AndroidManifest.xml:2:1-16:12
+ADDED from C:\Frontend mockups\RohitMarketplace\app\src\main\AndroidManifest.xml:17:1-35:12
+INJECTED from C:\Frontend mockups\RohitMarketplace\app\src\main\AndroidManifest.xml:17:1-35:12
+INJECTED from C:\Frontend mockups\RohitMarketplace\app\src\main\AndroidManifest.xml:17:1-35:12
+INJECTED from C:\Frontend mockups\RohitMarketplace\app\src\main\AndroidManifest.xml:17:1-35:12
 MERGED from [androidx.appcompat:appcompat-resources:1.6.1] C:\Users\Rr_98\.gradle\caches\transforms-4\49f2ae8d315730dcf0833adde653a5bd\transformed\jetified-appcompat-resources-1.6.1\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.appcompat:appcompat:1.6.1] C:\Users\Rr_98\.gradle\caches\transforms-4\2ffe3d92c75e10c6f3f8bef627e44e2f\transformed\appcompat-1.6.1\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.fragment:fragment:1.3.6] C:\Users\Rr_98\.gradle\caches\transforms-4\987248cfc8c10fbf6e49ba99c8d2be4f\transformed\fragment-1.3.6\AndroidManifest.xml:17:1-24:12
@@ -33,17 +33,20 @@ MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\Rr_98\.gradle\cache
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Rr_98\.gradle\caches\transforms-4\bf6d6e6491d984c5fd6980952499909c\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\Rr_98\.gradle\caches\transforms-4\4cb907b65448f1ae5c261b46deb18eb5\transformed\jetified-annotation-experimental-1.3.0\AndroidManifest.xml:17:1-22:12
 	package
-		ADDED from C:\Frontend mockups\RohitMarketplace\app\src\main\AndroidManifest.xml:3:5-36
 		INJECTED from C:\Frontend mockups\RohitMarketplace\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Frontend mockups\RohitMarketplace\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Frontend mockups\RohitMarketplace\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Frontend mockups\RohitMarketplace\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from C:\Frontend mockups\RohitMarketplace\app\src\main\AndroidManifest.xml:17:11-69
+uses-permission#android.permission.INTERNET
+ADDED from C:\Frontend mockups\RohitMarketplace\app\src\main\AndroidManifest.xml:19:5-67
+	android:name
+		ADDED from C:\Frontend mockups\RohitMarketplace\app\src\main\AndroidManifest.xml:19:22-64
 application
-ADDED from C:\Frontend mockups\RohitMarketplace\app\src\main\AndroidManifest.xml:5:5-15:19
-INJECTED from C:\Frontend mockups\RohitMarketplace\app\src\main\AndroidManifest.xml:5:5-15:19
+ADDED from C:\Frontend mockups\RohitMarketplace\app\src\main\AndroidManifest.xml:21:5-34:19
+INJECTED from C:\Frontend mockups\RohitMarketplace\app\src\main\AndroidManifest.xml:21:5-34:19
 MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\Rr_98\.gradle\caches\transforms-4\ff5364a924633a5302f9ce9723979915\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:23:5-33:19
 MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\Rr_98\.gradle\caches\transforms-4\ff5364a924633a5302f9ce9723979915\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:23:5-33:19
 MERGED from [androidx.core:core:1.9.0] C:\Users\Rr_98\.gradle\caches\transforms-4\b06a0754b3702ea81ce4d3a9c88f93e5\transformed\core-1.9.0\AndroidManifest.xml:28:5-89
@@ -59,25 +62,27 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Rr
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.9.0] C:\Users\Rr_98\.gradle\caches\transforms-4\b06a0754b3702ea81ce4d3a9c88f93e5\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
 	android:label
-		ADDED from C:\Frontend mockups\RohitMarketplace\app\src\main\AndroidManifest.xml:6:9-41
+		ADDED from C:\Frontend mockups\RohitMarketplace\app\src\main\AndroidManifest.xml:23:9-41
 	android:theme
-		ADDED from C:\Frontend mockups\RohitMarketplace\app\src\main\AndroidManifest.xml:7:9-65
+		ADDED from C:\Frontend mockups\RohitMarketplace\app\src\main\AndroidManifest.xml:24:9-65
+	android:usesCleartextTraffic
+		ADDED from C:\Frontend mockups\RohitMarketplace\app\src\main\AndroidManifest.xml:22:9-45
 activity#com.rohit.marketplace.MainActivity
-ADDED from C:\Frontend mockups\RohitMarketplace\app\src\main\AndroidManifest.xml:8:9-14:20
+ADDED from C:\Frontend mockups\RohitMarketplace\app\src\main\AndroidManifest.xml:26:9-32:20
 	android:exported
-		ADDED from C:\Frontend mockups\RohitMarketplace\app\src\main\AndroidManifest.xml:9:13-36
+		ADDED from C:\Frontend mockups\RohitMarketplace\app\src\main\AndroidManifest.xml:27:13-36
 	android:name
-		ADDED from C:\Frontend mockups\RohitMarketplace\app\src\main\AndroidManifest.xml:8:19-47
+		ADDED from C:\Frontend mockups\RohitMarketplace\app\src\main\AndroidManifest.xml:26:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Frontend mockups\RohitMarketplace\app\src\main\AndroidManifest.xml:10:13-13:29
+ADDED from C:\Frontend mockups\RohitMarketplace\app\src\main\AndroidManifest.xml:28:13-31:29
 action#android.intent.action.MAIN
-ADDED from C:\Frontend mockups\RohitMarketplace\app\src\main\AndroidManifest.xml:11:17-69
+ADDED from C:\Frontend mockups\RohitMarketplace\app\src\main\AndroidManifest.xml:29:17-69
 	android:name
-		ADDED from C:\Frontend mockups\RohitMarketplace\app\src\main\AndroidManifest.xml:11:25-66
+		ADDED from C:\Frontend mockups\RohitMarketplace\app\src\main\AndroidManifest.xml:29:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Frontend mockups\RohitMarketplace\app\src\main\AndroidManifest.xml:12:17-77
+ADDED from C:\Frontend mockups\RohitMarketplace\app\src\main\AndroidManifest.xml:30:17-77
 	android:name
-		ADDED from C:\Frontend mockups\RohitMarketplace\app\src\main\AndroidManifest.xml:12:27-74
+		ADDED from C:\Frontend mockups\RohitMarketplace\app\src\main\AndroidManifest.xml:30:27-74
 uses-sdk
 INJECTED from C:\Frontend mockups\RohitMarketplace\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Frontend mockups\RohitMarketplace\app\src\main\AndroidManifest.xml

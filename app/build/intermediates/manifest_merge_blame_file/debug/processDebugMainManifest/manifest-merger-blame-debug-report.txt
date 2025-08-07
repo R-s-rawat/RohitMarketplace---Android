@@ -1,73 +1,97 @@
 1<?xml version="1.0" encoding="utf-8"?>
-2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-3    package="com.rohit.marketplace"
-4    android:versionCode="1"
-5    android:versionName="1.0" >
+2<!--
+3 <?xml version="1.0" encoding="utf-8"?>
+4<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+5    package="com.rohit.marketplace">
 6
-7    <uses-sdk
-8        android:minSdkVersion="24"
-9        android:targetSdkVersion="34" />
-10
-11    <permission
-11-->[androidx.core:core:1.9.0] C:\Users\Rr_98\.gradle\caches\transforms-4\b06a0754b3702ea81ce4d3a9c88f93e5\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
-12        android:name="com.rohit.marketplace.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-12-->[androidx.core:core:1.9.0] C:\Users\Rr_98\.gradle\caches\transforms-4\b06a0754b3702ea81ce4d3a9c88f93e5\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
-13        android:protectionLevel="signature" />
-13-->[androidx.core:core:1.9.0] C:\Users\Rr_98\.gradle\caches\transforms-4\b06a0754b3702ea81ce4d3a9c88f93e5\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
-14
-15    <uses-permission android:name="com.rohit.marketplace.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-15-->[androidx.core:core:1.9.0] C:\Users\Rr_98\.gradle\caches\transforms-4\b06a0754b3702ea81ce4d3a9c88f93e5\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
-15-->[androidx.core:core:1.9.0] C:\Users\Rr_98\.gradle\caches\transforms-4\b06a0754b3702ea81ce4d3a9c88f93e5\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
-16
-17    <application
-17-->C:\Frontend mockups\RohitMarketplace\app\src\main\AndroidManifest.xml:5:5-15:19
-18        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-18-->[androidx.core:core:1.9.0] C:\Users\Rr_98\.gradle\caches\transforms-4\b06a0754b3702ea81ce4d3a9c88f93e5\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
-19        android:debuggable="true"
-20        android:extractNativeLibs="false"
-21        android:label="RohitMarketplace"
-21-->C:\Frontend mockups\RohitMarketplace\app\src\main\AndroidManifest.xml:6:9-41
-22        android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
-22-->C:\Frontend mockups\RohitMarketplace\app\src\main\AndroidManifest.xml:7:9-65
-23        <activity
-23-->C:\Frontend mockups\RohitMarketplace\app\src\main\AndroidManifest.xml:8:9-14:20
-24            android:name="com.rohit.marketplace.MainActivity"
-24-->C:\Frontend mockups\RohitMarketplace\app\src\main\AndroidManifest.xml:8:19-47
-25            android:exported="true" >
-25-->C:\Frontend mockups\RohitMarketplace\app\src\main\AndroidManifest.xml:9:13-36
-26            <intent-filter>
-26-->C:\Frontend mockups\RohitMarketplace\app\src\main\AndroidManifest.xml:10:13-13:29
-27                <action android:name="android.intent.action.MAIN" />
-27-->C:\Frontend mockups\RohitMarketplace\app\src\main\AndroidManifest.xml:11:17-69
-27-->C:\Frontend mockups\RohitMarketplace\app\src\main\AndroidManifest.xml:11:25-66
+7    <application
+8        android:label="RohitMarketplace"
+9        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+10        <activity android:name=".MainActivity"
+11            android:exported="true">
+12            <intent-filter>
+13                <action android:name="android.intent.action.MAIN" />
+14                <category android:name="android.intent.category.LAUNCHER" />
+15            </intent-filter>
+16        </activity>
+17    </application>
+18</manifest>
+19-->
+20<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+21    package="com.rohit.marketplace"
+22    android:versionCode="1"
+23    android:versionName="1.0" >
+24
+25    <uses-sdk
+26        android:minSdkVersion="24"
+27        android:targetSdkVersion="34" />
 28
-29                <category android:name="android.intent.category.LAUNCHER" />
-29-->C:\Frontend mockups\RohitMarketplace\app\src\main\AndroidManifest.xml:12:17-77
-29-->C:\Frontend mockups\RohitMarketplace\app\src\main\AndroidManifest.xml:12:27-74
-30            </intent-filter>
-31        </activity>
-32
-33        <provider
-33-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Rr_98\.gradle\caches\transforms-4\ff5364a924633a5302f9ce9723979915\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
-34            android:name="androidx.startup.InitializationProvider"
-34-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Rr_98\.gradle\caches\transforms-4\ff5364a924633a5302f9ce9723979915\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
-35            android:authorities="com.rohit.marketplace.androidx-startup"
-35-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Rr_98\.gradle\caches\transforms-4\ff5364a924633a5302f9ce9723979915\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
-36            android:exported="false" >
-36-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Rr_98\.gradle\caches\transforms-4\ff5364a924633a5302f9ce9723979915\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
-37            <meta-data
-37-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Rr_98\.gradle\caches\transforms-4\ff5364a924633a5302f9ce9723979915\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
-38                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-38-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Rr_98\.gradle\caches\transforms-4\ff5364a924633a5302f9ce9723979915\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
-39                android:value="androidx.startup" />
-39-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Rr_98\.gradle\caches\transforms-4\ff5364a924633a5302f9ce9723979915\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
-40            <meta-data
-40-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Rr_98\.gradle\caches\transforms-4\dbb619dfae1f223c35ece8322b4ad701\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
-41                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-41-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Rr_98\.gradle\caches\transforms-4\dbb619dfae1f223c35ece8322b4ad701\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
-42                android:value="androidx.startup" />
-42-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Rr_98\.gradle\caches\transforms-4\dbb619dfae1f223c35ece8322b4ad701\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
-43        </provider>
-44    </application>
-45
-46</manifest>
+29    <uses-permission android:name="android.permission.INTERNET" />
+29-->C:\Frontend mockups\RohitMarketplace\app\src\main\AndroidManifest.xml:19:5-67
+29-->C:\Frontend mockups\RohitMarketplace\app\src\main\AndroidManifest.xml:19:22-64
+30
+31    <permission
+31-->[androidx.core:core:1.9.0] C:\Users\Rr_98\.gradle\caches\transforms-4\b06a0754b3702ea81ce4d3a9c88f93e5\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+32        android:name="com.rohit.marketplace.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+32-->[androidx.core:core:1.9.0] C:\Users\Rr_98\.gradle\caches\transforms-4\b06a0754b3702ea81ce4d3a9c88f93e5\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+33        android:protectionLevel="signature" />
+33-->[androidx.core:core:1.9.0] C:\Users\Rr_98\.gradle\caches\transforms-4\b06a0754b3702ea81ce4d3a9c88f93e5\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+34
+35    <uses-permission android:name="com.rohit.marketplace.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+35-->[androidx.core:core:1.9.0] C:\Users\Rr_98\.gradle\caches\transforms-4\b06a0754b3702ea81ce4d3a9c88f93e5\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+35-->[androidx.core:core:1.9.0] C:\Users\Rr_98\.gradle\caches\transforms-4\b06a0754b3702ea81ce4d3a9c88f93e5\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+36
+37    <application
+37-->C:\Frontend mockups\RohitMarketplace\app\src\main\AndroidManifest.xml:21:5-34:19
+38        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+38-->[androidx.core:core:1.9.0] C:\Users\Rr_98\.gradle\caches\transforms-4\b06a0754b3702ea81ce4d3a9c88f93e5\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+39        android:debuggable="true"
+40        android:extractNativeLibs="false"
+41        android:label="@string/app_name"
+41-->C:\Frontend mockups\RohitMarketplace\app\src\main\AndroidManifest.xml:23:9-41
+42        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+42-->C:\Frontend mockups\RohitMarketplace\app\src\main\AndroidManifest.xml:24:9-65
+43        android:usesCleartextTraffic="false" >
+43-->C:\Frontend mockups\RohitMarketplace\app\src\main\AndroidManifest.xml:22:9-45
+44        <activity
+44-->C:\Frontend mockups\RohitMarketplace\app\src\main\AndroidManifest.xml:26:9-32:20
+45            android:name="com.rohit.marketplace.MainActivity"
+45-->C:\Frontend mockups\RohitMarketplace\app\src\main\AndroidManifest.xml:26:19-47
+46            android:exported="true" >
+46-->C:\Frontend mockups\RohitMarketplace\app\src\main\AndroidManifest.xml:27:13-36
+47            <intent-filter>
+47-->C:\Frontend mockups\RohitMarketplace\app\src\main\AndroidManifest.xml:28:13-31:29
+48                <action android:name="android.intent.action.MAIN" />
+48-->C:\Frontend mockups\RohitMarketplace\app\src\main\AndroidManifest.xml:29:17-69
+48-->C:\Frontend mockups\RohitMarketplace\app\src\main\AndroidManifest.xml:29:25-66
+49
+50                <category android:name="android.intent.category.LAUNCHER" />
+50-->C:\Frontend mockups\RohitMarketplace\app\src\main\AndroidManifest.xml:30:17-77
+50-->C:\Frontend mockups\RohitMarketplace\app\src\main\AndroidManifest.xml:30:27-74
+51            </intent-filter>
+52        </activity>
+53
+54        <provider
+54-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Rr_98\.gradle\caches\transforms-4\ff5364a924633a5302f9ce9723979915\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+55            android:name="androidx.startup.InitializationProvider"
+55-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Rr_98\.gradle\caches\transforms-4\ff5364a924633a5302f9ce9723979915\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
+56            android:authorities="com.rohit.marketplace.androidx-startup"
+56-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Rr_98\.gradle\caches\transforms-4\ff5364a924633a5302f9ce9723979915\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
+57            android:exported="false" >
+57-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Rr_98\.gradle\caches\transforms-4\ff5364a924633a5302f9ce9723979915\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
+58            <meta-data
+58-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Rr_98\.gradle\caches\transforms-4\ff5364a924633a5302f9ce9723979915\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+59                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+59-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Rr_98\.gradle\caches\transforms-4\ff5364a924633a5302f9ce9723979915\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
+60                android:value="androidx.startup" />
+60-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Rr_98\.gradle\caches\transforms-4\ff5364a924633a5302f9ce9723979915\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
+61            <meta-data
+61-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Rr_98\.gradle\caches\transforms-4\dbb619dfae1f223c35ece8322b4ad701\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+62                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+62-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Rr_98\.gradle\caches\transforms-4\dbb619dfae1f223c35ece8322b4ad701\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+63                android:value="androidx.startup" />
+63-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Rr_98\.gradle\caches\transforms-4\dbb619dfae1f223c35ece8322b4ad701\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+64        </provider>
+65    </application>
+66
+67</manifest>

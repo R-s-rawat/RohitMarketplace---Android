@@ -66,5 +66,12 @@ _______________________________________________________________________
 test using adb (either virtual or physical device)
 
 then 
+
+following using cmd:
 gradlewclean
 gradlew assembleDebug
+
+following using powershell:
+adb -s <DEVICE-TO-BE-CONNECTED>  install -r app/build/outputs/apk/debug/app-debug.apk
+_______________________________________________________________________
+iteration of cleanups and builds as per errors..
