@@ -1,0 +1,55 @@
+// android sdk (windows intallation setup)
+
+C:\ANDROID-DEVELOPMENT\
+├── platform-tools\         ← ADB tools (adb.exe, etc.)
+├── cmdline-tools\
+│   └── latest\             ← Contains bin/, lib/, etc.
+├── build-tools\            ← Will be installed later by sdkmanager
+├── platforms\              ← Will be installed later by sdkmanager
+
+System Variables:
+Variable	    Value
+ANDROID_HOME	C:\ANDROID-DEVELOPMENT
+
+Add to System Path:
+    C:\ANDROID-DEVELOPMENT\platform-tools
+    C:\ANDROID-DEVELOPMENT\cmdline-tools\latest\bin
+
+###########################
+Then, install (other dependencies) (not to be added to env) - using:
+sdkmanager.bat --sdk_root=%ANDROID_HOME% "platforms;android-34" "build-tools;34.0.0"
+###########################
+
+Then, Install gradle && add to path(system env)
+
+###########################
+create app -code..
+For e.g..
+
+MyWebViewApp/
+├── app/
+│   ├── src/main/java/com/example/mywebview/MainActivity.java
+│   ├── src/main/res/layout/activity_main.xml
+│   ├── src/main/AndroidManifest.xml
+│   ├── build.gradle
+├── build.gradle
+├── settings.gradle
+├── gradlew
+├── gradlew.bat
+├── gradle/wrapper/gradle-wrapper.properties
+
+#####################
+gradlew assembleDebug
+
+adb install -r app/build/outputs/apk/debug/app-debug.apk
+###########################
+-----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+SINCE: Write proper settings.gradle 👈
+Then as we will in starting have only 1 file in gradle\wrapper.. (ie. gradle-wrapper.properties)
+
+HENCE: Create gradle-wrapper.jar (using "gradle wrapper --gradle-version 8.7")
+_______________________________________________________________________
+NOTE: Fix build.gradle (Project-level) - if any errors.
+      Fix app/build.gradle (Module-level) - if any errors.
+_______________________________________________________________________
