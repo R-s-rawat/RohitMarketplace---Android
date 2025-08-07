@@ -64,3 +64,7 @@ Summary so far:
 
 _______________________________________________________________________
 test using adb (either virtual or physical device)
+
+then 
+gradlewclean
+gradlew assembleDebug
