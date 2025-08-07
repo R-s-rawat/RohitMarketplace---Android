@@ -53,3 +53,14 @@ _______________________________________________________________________
 NOTE: Fix build.gradle (Project-level) - if any errors.
       Fix app/build.gradle (Module-level) - if any errors.
 _______________________________________________________________________
+Then, create new file in root of the project (gradle.properties) 
+
+Summary so far:
+| File                | Purpose                                                  |
+| ------------------- | -------------------------------------------------------- |
+| `gradle.properties` | Configure **global build flags** like enabling AndroidX  |
+| `build.gradle`      | Configure **dependencies and tasks** for your module/app |
+| `settings.gradle`   | Include **which modules to build**                       |
+
+_______________________________________________________________________
+test using adb (either virtual or physical device)
